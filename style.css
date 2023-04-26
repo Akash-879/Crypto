@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:ital,wght@1,300&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-1:#fff;
+    --color-2:rgb(255,255,255,.6);
+    --color-3:#000;
+    --color-4:#00002c;
+    --color-5:#000024;
+    --color-6:#00b7c5;
+    --color-7:#08d3d3;
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    background:var(--color-4);
+    overflow: hidden;
+}
+
+header nav{
+    width: 70%;
+    height: 15%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    position: relative;
+    padding: 3px 15px;
+}
+
+header nav ul li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(154, 154, 150,.5);
+    border-radius: 50%;
+    top: 6px;
+    right: 9px;
+    border-radius: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--color-1);
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+header nav ul li a:hover{
+    color: var(--color-2);
+}
+
+header nav button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color:var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header nav button:hover{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+}
+
+header section{
+    width: 70%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section .content,.img_data{
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: var(--color-1);
+    
+}
+
+header section .content h1{
+    font-size: 45px;
+    line-height: 55px;
+}
+
+header section .content p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+header section .content button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color:var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header section .content button:hover{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+}
+
+header section .img_data img{
+    width: 530px;
+    animation: bg 100s linear infinite;
+}
+
+
+@keyframes bg{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+aside{
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: var(--color-1);
+    background: var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+aside h1{
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 60px;
+}
+
+aside h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: var(--color-6);
+    bottom: -10px;
+    left:100px;
+    border-radius: 10px;
+    
+}
+
+aside p{
+    font-size: 12px;
+    text-align: centers;
+}
+
+aside img{
+    position: relative;
+    width: 100%;
+    margin-top: -60px;
+}
+
+aside .time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .time span{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0px 25px;
+    color: var(--color-7);
+}
+aside .time span h6{
+    font-size: 11px;
+    text-align: center;
+    color: #a5a5a5;
+}
+
+aside .time h5{
+    font-size: 25px;
+    margin-top: -16px;
+}
+
+aside button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color:var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    margin:40px 0px 30px 0px ;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+aside button:hover{
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+}
+
+.app{
+    width: 100%;
+    height: auto;
+    background: var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .app_img_bx, .app_content_bx{
+    position: relative;
+    width: 35%;
+    height: auto;
+    color: var(--color-1);
+    margin-top: 40px;
+    
+}
+
+.app .app_img_bx{
+    width: 30%;
+}
+
+.app .app_img_bx img{
+    width: 90%;
+}
+
+.app .app_content_bx h1{
+    position: relative;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.app .app_content_bx h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -20px;
+    left:0px;
+    border-radius: 10px;
+
+}
+
+.app .app_content_bx p{
+    margin-top: 60px;
+    font-size: 19px;
+    word-break: break-all;
+
+}
+
+.app .app_content_bx img{
+    margin-top: 20px;
+}
+
+.converter {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.converter::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/crypto\ bg.jpg)no-repeat center center/cover;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.converter h1{
+    position: relative;
+    font-size: 25px;
+    padding-top: 50px;
+    align-items: center;
+    color: var(--color-1);
+    text-align: center;
+}
+
+.converter h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -20px;
+    left: 49%;
+    border-radius: 10px;
+}
+
+.converter .cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.converter .cards .card{
+    position: relative;
+    width: 380px;
+    height: 210px;
+}
+.converter .cards .card2{
+    width: 50px;
+    height: 50px;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-6);
+    color: var(--color-1);
+}
+
+.converter .cards .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00002c80;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.converter .cards .card .select{
+    display: flex;
+    align-items: center;
+    color: var(--color-1);
+    margin: 30px 20px 0px 30px;
+}
+
+.converter .cards .card .select h4{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-6);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px var(--color-7);
+}
+
+.converter .cards .card .select .select1{
+    margin-left: 20px;
+}
+
+.converter .cards .card .select .select1 h6{
+    color: var(--color-2);
+    margin-left: 5px;
+}
+
+.converter .cards .card .select .select1 select{
+    width: 250px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--color-1);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.converter .cards .card .select .select1 select option{
+    background: #00fff0;
+}
+
+.converter .cards .card .enter_bitcoin{
+    margin: 40px 40px 5px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid#d0498d;
+    color: var(--color-1);
+}
+.converter .cards .card .enter_bitcoin input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-1);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.converter .cards .card p{
+    margin: 0px 40px;
+    font-size: 12px;
+    color: var(--color-1);
+}
+
+
+.rocket{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(img/crypto\ bg.jpg)no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rocket .rocket_content,.rocket_img{
+    width: 32%;
+    height: auto;
+  
+    color: var(--color-1);
+}
+
+
+.rocket .rocket_content h1{
+    position: relative;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 50px;
+
+}
+.rocket .rocket_content h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: var(--color-6);
+    bottom: -10px;
+    left:0px;
+    border-radius: 10px;
+
+}
+
+.rocket .rocket_content p{
+    margin-top: 60px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.rocket .rocket_content ul{
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rocket .rocket_content ul li {
+    position: relative;
+    width: 200px;
+    font-size: 12px;
+    margin: 3px 0px;
+    padding-left: 20px;
+}
+
+.rocket .rocket_content ul li::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #d0498d;
+    border-radius: 50%;
+    left: 0;
+    top: 8px;
+}
+
+
+.rocket .rocket_content button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color:var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    margin:40px 0px 30px 0px ;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.rocket .rocket_content button:hover{
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+
+}
+
+.rocket .rocket_img{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.road_map{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    background: url(img/crypto\ bg.jpg)no-repeat center center/cover;
+}
